@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer>
             <div className="container footer-grid">
                 <div className="footer-brand">
-                    <a href="#" className="brand-logo-container">
+                    <Link to="/" className="brand-logo-container" onClick={() => window.scrollTo(0, 0)} style={{ textDecoration: 'none' }}>
                         <div className="brand-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                                 <path d="M12 2.5c-2.5 4-4.5 6.5-4.5 9.5a4.5 4.5 0 0 0 9 0c0-3-2-5.5-4.5-9.5z" strokeLinecap="round" strokeLinejoin="round" />
@@ -16,7 +17,7 @@ const Footer = () => {
                         </div>
                         <div className="brand-name">HYDRELLE</div>
                         <div className="brand-tagline">RADIANCE REDEFINED</div>
-                    </a>
+                    </Link>
                     <p style={{ marginTop: '20px' }}>Nurturing your natural glow since 2024.</p>
                 </div>
                 <div className="footer-links">

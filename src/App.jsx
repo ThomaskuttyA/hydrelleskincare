@@ -1,22 +1,37 @@
 import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ProductGrid from './components/ProductGrid';
 import Footer from './components/Footer';
+import ProductDetail from './pages/ProductDetail';
+import CheckoutPage from './pages/CheckoutPage';
 
 function App() {
-  const [cartCount, setCartCount] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
 
-  const addToCart = () => {
-    setCartCount(prev => prev + 1);
+  const addToCart = (product) => {
+    setCartItems(prev => [...prev, product]);
+  };
+
+  const clearCart = () => {
+    setCartItems([]);
   };
 
   return (
     <>
-      <Header cartCount={cartCount} />
+      <Header cartItems={cartItems} />
       <main>
-        <Hero />
-        <ProductGrid onAddToCart={addToCart} />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <ProductGrid onAddToCart={addToCart} />
+            </>
+          } />
+          <Route path="/product/:id" element={<ProductDetail onAddToCart={addToCart} />} />
+          <Route path="/checkout" element={<CheckoutPage cartItems={cartItems} clearCart={clearCart} />} />
+        </Routes>
       </main>
       <Footer />
     </>

@@ -16,84 +16,96 @@ export const products = [
         id: 1,
         title: "Velvet Cleansing Milk",
         category: "Cleanser",
-        price: "$42.00",
+        priceAED: 154.14,
+        priceUSD: 42.00,
         image: p1
     },
     {
         id: 2,
         title: "Luminous Dew Serum",
         category: "Serum",
-        price: "$68.00",
+        priceAED: 249.56,
+        priceUSD: 68.00,
         image: p2
     },
     {
         id: 3,
         title: "Night Repair Elixir",
         category: "Oil",
-        price: "$85.00",
+        priceAED: 311.95,
+        priceUSD: 85.00,
         image: p3
     },
     {
         id: 4,
         title: "Hydro-Cloud Cream",
         category: "Moisturizer",
-        price: "$55.00",
+        priceAED: 201.85,
+        priceUSD: 55.00,
         image: p4
     },
     {
         id: 5,
         title: "Monjeune Ampoule Face Serum 30ml",
         category: "Serum",
-        price: "AED 99.00",
+        priceAED: 99.00,
+        priceUSD: 26.98,
         image: monjeune_serum
     },
     {
         id: 6,
         title: "Ph.D Hair Loss Control Spray",
         category: "Hair Care",
-        price: "AED 145.60",
+        priceAED: 145.60,
+        priceUSD: 39.67,
         image: botanic_sens_spray
     },
     {
         id: 7,
         title: "ANTALA Jojoba Premium Organic Oil",
         category: "Oil",
-        price: "AED 144.60",
+        priceAED: 144.60,
+        priceUSD: 39.40,
         image: antala_jojoba
     },
     {
         id: 8,
         title: "Pore 55% Skin Texture Pad",
         category: "Exfoliator",
-        price: "AED 89.00",
+        priceAED: 89.00,
+        priceUSD: 24.25,
         image: dr_percent_pad
     },
     {
         id: 9,
         title: "Skin Texture 27% Rice Serum",
         category: "Serum",
-        price: "AED 128.90",
+        priceAED: 128.90,
+        priceUSD: 35.12,
         image: dr_percent_serum
     },
     {
         id: 10,
         title: "Ph.D. Daily Sunscreen Face SPF 50+",
         category: "Sunscreen",
-        price: "AED 125.24",
+        priceAED: 125.24,
+        priceUSD: 34.13,
         image: botanic_sunscreen
     },
     {
         id: 11,
         title: "Green Repair Soothing Ampoule 50ml",
         category: "Serum",
-        price: "AED 199.65",
+        priceAED: 199.65,
+        priceUSD: 54.40,
         image: antala_green_repair
     },
     {
         id: 12,
         title: "3X Vita Aurora Serum",
         category: "Serum",
-        price: "AED 79.00",
+        priceAED: 79.00,
+        priceUSD: 21.53,
         image: hamel_aurora_serum
     }
 ];
